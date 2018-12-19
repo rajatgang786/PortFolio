@@ -42,7 +42,7 @@ export default class About extends react.Component {
             coding and learning new technologies. Having 2 years of experience
             in B2B mobile & web applications, I can work as an individual and
             also as a team member. I accept challenges with a great alacrity and
-            always try to find best feasible solution.I like to keep myself
+            always try to find best feasible solution. I like to keep myself
             abreast of current technologies and gain profound knowledge on the
             same. I aim to expertise in the areas of my interest. You can always
             find me

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import PortFolio from "./components/PortFolio/Portfolio2";
+import PortFolio from "./components/PortFolio/Portfolio";
 class App extends Component {
 
   constructor(props) {

@@ -1,53 +1,95 @@
 import React, { Component } from "react";
 import axios from "axios";
+import "./ProjectList.css";
 
-const styles = {
-  root: {
-    fontFamily:
-      '"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif',
-    fontWeight: 50,
-    fontColor:"black",
-    margin: "auto",
-  }
-};
 export default class ProjectList extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { projects: [] , width: 0, height: 0  };
-
-  }
-
-  componentDidMount() {
-    this.UserList();
-
-  }
-
-  UserList() {
-    axios.get("https://api.github.com/users/rajatgang786/repos").then(res => {
-      this.setState({ projects: res.data });
-    });
-  }
-
   render() {
     return (
       <div>
-        {this.state.projects.map((item, index) => {
-          return (
-            <div className="container" key={index} style={{ marginTop:"20px  "}}>
-              <div className="card" style={{ width: "auto" , backgroundColor: "white"  }}>
-                <div className="card-body">
-                  <h4 className="card-title"style={styles.root} >{item.name}</h4>
-                  <p style={styles.root} className="card-text">
-                  Language - {item.language}
-                  </p>
-                  <a href={item.clone_url} className="btn btn-primary">
-                    <p style={styles.root}>Source Code</p>
-                  </a>
-                </div>
-              </div>
-            </div>  
-          );
-        })}
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <h1>PortFolio</h1>
+              <p>
+              This project describe about Rajat Gang and my work.
+
+              </p>
+              <p>
+                <button>Source Code</button>
+              </p>
+            </div>
+          </div>
+
+        <div className="column">
+          <div class="card">
+            <h1>Super Mario</h1>
+            <p>
+              A platformer game, re-invented with additional power-ups and graphics.
+            </p>
+            <p>
+              <button>Source Code</button>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style={{marginTop:'50px'}}/>
+
+      <div class="row">
+          <div class="column">
+            <div class="card">
+              <h1>React-Js Tuts </h1>
+              <p>
+              The techniques to learn in the tutorial are fundamental to building any React apps, and mastering it will give user a deep understanding of React.
+
+              </p>
+              <p>
+                <button>Source Code</button>
+              </p>
+            </div>
+          </div>
+
+        <div className="column">
+          <div class="card">
+            <h1>Android-Tutorial</h1>
+            <p>
+              The techniques to learn in the tutorial are fundamental to building any Android apps, and mastering it will give user a deep understanding of Android.
+            </p>
+            <p>
+              <button>Source Code</button>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style={{marginTop:'50px'}}/>
+      
+      <div class="row">
+          <div class="column">
+            <div class="card">
+              <h1>Attendence System</h1>
+              <p>
+              Classroom document sharing platforms for student and faculty.
+
+              </p>
+              <p>
+                <button>Source Code</button>
+              </p>
+            </div>
+          </div>
+
+        <div className="column">
+          <div class="card">
+            <h1>Portal4U</h1>
+            <p>
+            A platformer game, re-invented with additional power-ups and graphics.
+            </p>
+            <p>
+              <button>Source Code</button>
+            </p>
+          </div>
+        </div>
+      </div>
       </div>
     );
   }
