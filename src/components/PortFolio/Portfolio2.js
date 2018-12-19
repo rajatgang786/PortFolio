@@ -19,14 +19,13 @@ const styles = {
     backgroundColor:"#f5f5f5"
   },
   root: {
-    fontFamily:
-      '"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif',
-    fontWeight: 50,
-    fontColor: "black",
-    marginTop: 80,
-    textAlign: "center",
-    color: "black"
-  }
+    fontFamily:"Palatino Linotype, Book Antiqua, Palatino, serif",
+      fontWeight: 50,
+      fontColor: "black",
+      marginTop: 80,
+      textAlign: "center",
+      color: "black"
+  },
 };
 
 export default class PortFolio2 extends Component {
@@ -81,30 +80,30 @@ export default class PortFolio2 extends Component {
                 </div>
               </div>
             </div>
-            <ul class="ct-socials">
+            <ul className="ct-socials">
               <li>
                 <a href="https://twitter.com/Rajatgang">
-                  <i class="fa fa-twitter" />
+                  <i className="fa fa-twitter" />
                 </a>
               </li>
               <li>
                 <a href="https://www.facebook.com/rajatgang786">
-                  <i class="fa fa-facebook" />
+                  <i className="fa fa-facebook" />
                 </a>
               </li>
               <li>
                 <a href="https://github.com/rajatgang786">
-                  <i class="fa fa-github" />
+                  <i className="fa fa-github" />
                 </a>
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/rajat-gang-aba64071/">
-                  <i class="fa fa-linkedin" />
+                  <i className="fa fa-linkedin" />
                 </a>
               </li>
               <li>
                 <a href="https://medium.com/@gangrajat.mail">
-                  <i class="fa fa-medium" />
+                  <i className="fa fa-medium" />
                 </a>
               </li>
             </ul>{" "}

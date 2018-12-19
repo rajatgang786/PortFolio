@@ -1,14 +1,11 @@
 import React, * as react from "react";
-import logo from "../../assets/images/Rajat.jpg";
-import { connect } from "react-redux";
+import profilePic from '../../assets/images/rajat_profile.jpg';
 
 const styles = {
   root: {
-    fontFamily:
-      '"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif',
-    fontWeight: 50,
+    fontFamily:"Palatino Linotype, Book Antiqua, Palatino, serif",
     fontColor: "black",
-    marginTop:120,
+    marginTop:50,
     wordBreak: "keep-all",
     textAlign: "justify",
     textIndent: 50
@@ -17,10 +14,18 @@ const styles = {
     borderBottom: "1px solid pink",
     paddingBottom: "10px"
   },
+  img: {
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+    height:130
+  }
 };
 export default class About extends react.Component {
   render() {
     return (
+      <div>
+        <img src={profilePic} className="img-circle" style={styles.img} alt="Paris"></img>
         <div
         className="container-fluid"
           style={{
@@ -29,6 +34,8 @@ export default class About extends react.Component {
             alignItems: "center"
           }}
         >
+           
+
           <h3 style={styles.root}>
             {" "}
             My name is <b>Rajat Gang</b>. I am a software developer with a great proclivities towards
@@ -46,6 +53,7 @@ export default class About extends react.Component {
             <a href="https://medium.com/@gangrajat.mail"> Publications </a>.
             Feel free to ask me any question.
           </h3>
+        </div>
         </div>
     );
   }
