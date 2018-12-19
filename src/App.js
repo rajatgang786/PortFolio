@@ -1,25 +1,35 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React, { Component } from "react";
+import PortFolio from "./components/PortFolio/Portfolio2";
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = { width: 0, height: 0 };
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+    this.onScroll = this.onScroll.bind(this);
+  }
+  
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+    window.addEventListener("scroll", this.onScroll);
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+    window.addEventListener("scroll", this.onScroll);
+  }
+  
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+  }
+  onScroll() {
+    this.setState({ width: window.innerWidth, height: window.scrollY + 780 });
+  }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div style={{ width:this.state.width , height:this.state.height }}>
+       <PortFolio />
       </div>
     );
   }
