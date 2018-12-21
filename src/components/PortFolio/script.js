@@ -1,4 +1,5 @@
 import $ from 'jquery';
+
 $(document).ready(function () {
     var trigger = $('.hamburger'),
         overlay = $('.overlay'),
@@ -10,7 +11,7 @@ $(document).ready(function () {
   
       function hamburger_cross() {
   
-        if (isClosed == true) {          
+        if (isClosed === true) {          
           overlay.hide();
           trigger.removeClass('is-open');
           trigger.addClass('is-closed');

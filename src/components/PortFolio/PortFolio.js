@@ -16,7 +16,8 @@ const styles = {
     bottom: 0,
     width: "100%",
     textAlign: "center",
-    backgroundColor:"#f5f5f5"
+    backgroundColor:"#f5f5f5",
+    marginTop: 50,
   },
   root: {
     fontFamily:"Palatino Linotype, Book Antiqua, Palatino, serif",
