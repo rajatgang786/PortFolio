@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import axios from "axios";
 import "./ProjectList.css";
 
 export default class ProjectList extends Component {
