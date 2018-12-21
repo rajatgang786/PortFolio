@@ -1,5 +1,4 @@
 import React, * as react from "react";
-import {connect} from 'react-redux';
 import profilePic from '../../assets/images/rajat_profile.jpg';
 const styles = {
   root: {
@@ -40,10 +39,4 @@ class HomePage extends react.Component {
   }
 }
 
-const mapStateToProps = state => {
-  return{
-    ctr : state
-  }
-} 
-
-export default connect(mapStateToProps)(HomePage);
+export default HomePage;
