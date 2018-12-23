@@ -4,8 +4,7 @@ const styles = {
     fontFamily:"Palatino Linotype, Book Antiqua, Palatino, serif",
     fontColor: "black",
     wordBreak: "keep-all",
-    textAlign: "justify",
-    textIndent: 50
+    textAlign: "justify", 
   },
   heading: {
     borderBottom: "1px solid pink",
@@ -38,7 +37,7 @@ export default class Article extends react.Component {
                 ReactJS vs Angular : Which one is better?
               </h4>
               <p style={styles.root} className="card-text">
-                In this article we will learn the difference between Angular and React and which framework or library we should use according to our usage.
+                In this article we will learn the difference between Angular and React and which framework or library we should use according to our project.
               </p>
             </div>
           </div>
